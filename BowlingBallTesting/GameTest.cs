@@ -3,9 +3,16 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BowlingBallTesting
 {
+    /// <summary>
+    /// Game test class.
+    /// </summary>
+    /// <seealso cref="BowlingBallTesting.TestBase" />
     [TestClass]
     public class GameTest: TestBase
     {
+        /// <summary>
+        /// Question paper pin points test.
+        /// </summary>
         [TestMethod]
         public void Random_Input_Test()
         {
@@ -19,6 +26,9 @@ namespace BowlingBallTesting
             Assert.AreEqual(187, totalScore);
         }
 
+        /// <summary>
+        /// Perfect game test.
+        /// </summary>
         [TestMethod]
         public void Perfect_Game_Test()
         {
@@ -32,6 +42,9 @@ namespace BowlingBallTesting
             Assert.AreEqual(300, totalScore);
         }
 
+        /// <summary>
+        /// Gutter game test.
+        /// </summary>
         [TestMethod]
         public void Gutter_Game_Test()
         {

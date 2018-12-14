@@ -3,9 +3,16 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BowlingBallTesting
 {
+    /// <summary>
+    /// Normal frame test class.
+    /// </summary>
+    /// <seealso cref="BowlingBallTesting.TestBase" />
     [TestClass]
     public class NormalFrameTest: TestBase
     {
+        /// <summary>
+        /// Normal frame bonus calculation should be zero.
+        /// </summary>
         [TestMethod]
         public void Normal_Frame_Bonus_Calculation_Should_Be_Zero()
         {
@@ -19,6 +26,9 @@ namespace BowlingBallTesting
             Assert.AreEqual(actualBonus, calculatedBonus);
         }
 
+        /// <summary>
+        /// Normal frame bonus calculation even when next rolls are provided.
+        /// </summary>
         [TestMethod]
         public void Normal_Frame_Bonus_Calculation_Provided_Next_Rolls()
         {

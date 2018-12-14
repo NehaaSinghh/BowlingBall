@@ -3,9 +3,16 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BowlingBallTesting
 {
+    /// <summary>
+    /// Spare frame test cases.
+    /// </summary>
+    /// <seealso cref="BowlingBallTesting.TestBase" />
     [TestClass]
     public class SpareFrameTest: TestBase
     {
+        /// <summary>
+        /// Spares frame bonus calculation provided only one next roll.
+        /// </summary>
         [TestMethod]
         public void Spare_Bonus_Calculation_Provided_One_Next_Roll()
         {
@@ -20,8 +27,11 @@ namespace BowlingBallTesting
             Assert.AreEqual(actualBonus, calculatedBonus);
         }
 
+        /// <summary>
+        /// Spares frame bonus calculation provided two next rolls.
+        /// </summary>
         [TestMethod]
-        public void Spare_Bonus_Calculation_Provided_Two_Next_Roll()
+        public void Spare_Bonus_Calculation_Provided_Two_Next_Rolls()
         {
             var roll1 = GetRandomPins(0, 9);
             var roll2 = 10 - roll1;
